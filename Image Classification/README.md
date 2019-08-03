@@ -10,13 +10,13 @@ The synthetic data is then used to train deep neural networks, and their perform
 ## Purpose Statement
 The purpose of this exploratory research is to explore to what extent synthetic data can be used to train deep neural networks for the classification of military vehicles in images. 
 
-## Training Deep neural networks for classification of military vehicles in images with synthetic data
+## Training deep neural networks for classification of military vehicles in images with synthetic data
 ### Synthetic Dataset with 7 classes: 
 Background, [BMP-2](https://de.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.wikipedia.org/wiki/Buk_missile_system), [Civilian Car](https://en.wikipedia.org/wiki/Car), [T-14](https://en.wikipedia.org/wiki/T-14_Armata), [T-90](https://en.wikipedia.org/wiki/T-90), [ZSU-23-4](https://en.wikipedia.org/wiki/ZSU-23-4_Shilka) for image classification:
 
 [**The dataset as zipfile can be downloaded here (781mb)**](https://drive.google.com/file/d/1r-AZeKXd_SvSXwOcQuqX_w9q0F0nT-uW/view?usp=sharing)
 
-**7000 Training images (1000 per class) :** 
+**49000 Training images (7000 per class) :** 
 - Training Images classes "T14", and "Background" created with [Arma3](https://arma3.com/)
 - Training Images classes "T90", "BMP2", and "ZSU-23", created with [Arma3](https://arma3.com/) and Arma3 Steam workshop content [RHSAFRF](https://steamcommunity.com/sharedfiles/filedetails/?id=843425103&searchtext=RHS)
 - Training Images class "Buk-M1-2" created  with [Arma3](https://arma3.com/) and Arma3 Steam workshop content [POOK SAM PACK](https://steamcommunity.com/sharedfiles/filedetails/?id=1154375007&searchtext=Pook+SAM)
@@ -38,7 +38,7 @@ Using this [**python code for training**](code/RuTanks_train.py). Please adapt t
 - **Training on CPU is not recommended, unless you have a time machine...**
 
 ### Results
-**Validation accuracy: 0.9333** after 20 epochs. Training took 519 minutes on [Nvidia Geforce RTX 2060](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2060/).
+**Validation accuracy: 0.9333** after 20 epochs. Training took 519 minutes on [Nvidia Geforce RTX 2060](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2060/), (Keras 2.2.4, Tensorflow-gpu 1.14.0)
 
 ##### Validation accuracy of Level1 (after 10 Epochs): 0.7143
 
