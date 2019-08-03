@@ -33,9 +33,10 @@ Using this [**python code for training**](code/RuTanks_train.py). Please adapt t
 - line 36 - replace the model path: model_path = 'C:\\Users\\YOURNAME\\trained_models\\RuTanks7000_mX_'
 - line 37 - replace the path to your TensorBoardLogDir: TensorBoardLogDir = 'C:\\Users\\YOURNAME\\logs'
 
-- **Lower the batchsize if you dont have at least 6GB gpu memory!**
-- **If you dont have access to your own GPU, try** [**Google Colab**](https://colab.research.google.com/)
-- **Training on CPU is not recommended, unless you have a time machine...**
+Notes for the training:
+* **Lower the batchsize if you dont have at least 6GB gpu memory!**
+* **If you dont have access to your own GPU, try** [**Google Colab**](https://colab.research.google.com/)
+* **Training on CPU is not recommended, unless you have a time machine...**
 
 ### Results
 **Validation accuracy: 0.9333** after 20 epochs. Training took 519 minutes on [Nvidia Geforce RTX 2060](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2060/), (Keras 2.2.4, Tensorflow-gpu 1.14.0)
@@ -48,7 +49,7 @@ Using this [**python code for training**](code/RuTanks_train.py). Please adapt t
 
 ![acc_Level2](results/train_val_acc_level2.png)
 
-[The Tensorboard logfiles can be found here.](results/logs)
+[**The Tensorboard logfiles can be found here**](results/logs)
 
 ### Analyzing the trained model:
 If you want to skip the Training, you can download and use my [**RuTanks7000_v1_l2.h5 model file (442mb)**](https://drive.google.com/file/d/1ozbwzliRF6zVs7M4PXMUMctrck2FllDh/view?usp=sharing)
