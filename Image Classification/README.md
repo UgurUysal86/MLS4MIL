@@ -65,6 +65,14 @@ Use this [**python code for analyzing**](code/RuTanks_analyze.py). You will need
 
 #### Here are some class predictions:
 
+![Class Background](analysis/TestImage_008_pred.png)
+![BMP-2](analysis/TestImage_027_pred.png)
+![Buk-M1-2](analysis/TestImage_034_pred.png)
+![Civilian Car](analysis/TestImage_049_pred.png)
+![T-14](analysis/TestImage_064_pred.png)
+![T-90](analysis/TestImage_086_pred.png)
+![ZSU-23](analysis/TestImage_094_pred.png)
+
 [**Class predictions for all 105 test images can be found here**](analysis)
 
 #### Here is a tSNE visualization (t-Distributed Stochastic Neighbor Embedding for visualizing high-dimensional data) of the 105 test images:
