@@ -9,6 +9,8 @@ Background, [BMP-2](https://de.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.
 
 [**Download the dataset as zipfile here (781mb)**](https://drive.google.com/file/d/1r-AZeKXd_SvSXwOcQuqX_w9q0F0nT-uW/view?usp=sharing)
 
+Please refer to https://github.com/UgurUysal86/MLS4MIL/tree/master/Image%20Classification and following sources when using the dataset:
+
 **Train images:** 
 - Training Images classes "T14", and "Background" created with [Arma3](https://arma3.com/)
 - Training Images classes "T90", "BMP2", and "ZSU-23", created with [Arma3](https://arma3.com/) and Arma3 Steam workshop content [RHSAFRF](https://steamcommunity.com/sharedfiles/filedetails/?id=843425103&searchtext=RHS)
@@ -17,8 +19,6 @@ Background, [BMP-2](https://de.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.
 
 **Test images:**
 - Please check the image references section below for detailed references of the test images!
-
-Please refer to https://github.com/UgurUysal86/MLS4MIL/tree/master/Image%20Classification and following sources when using the dataset:
 
 ### Using Keras for Transfer Learning:
 Use this [**python code for training**](code/RuTanks_train.py). You will need to adapt the following lines:
@@ -42,6 +42,8 @@ Validation accuracy of Level1 (after 10 Epochs): 0.7143
 Validation accuracy of Level2 (after additional 10 Epochs): 0.9333
 
 ![acc_Level2](results/train_val_acc_level2.png)
+
+[The Tensorboard logfiles can be found here.](results/logs)
 
 ### Analyzing the trained model:
 Use this [**python code for analyzing**](code/RuTanks_analyze.py). You will need to adapt the following lines:
