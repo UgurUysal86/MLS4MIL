@@ -2,15 +2,19 @@
 
 ![poster](https://github.com/UgurUysal86/MLS4MIL/blob/master/poster_classification.png)
 
-### Abstract
+## Introduction
 Deep neural networks for image classification have already proved to be highly useful in industrial applications but require vast amounts of human-annotated images to be reliable. 
 Here the game engine [Arma3](https://arma3.com/) is used to generate photo-realistic images of various military vehicles in diverse situations. For instance, the angles and distances from which the vehicles are seen, and their locations can be varied. 
-The synthetic data is then used to train deep neural networks, and their performance is evaluated on real-world data. In this repo, I would like to present to what extent synthetic data can be used to train deep neural networks for the classification of military vehicles in images. 
+The synthetic data is then used to train deep neural networks, and their performance is evaluated on real-world data. 
 
-### Dataset with seven classes: 
+## Purpose Statement
+The purpose of this exploratory research is to explore to what extent synthetic data can be used to train deep neural networks for the classification of military vehicles in images. 
+
+## Training Deep neural networks for the classification of military vehicles in images
+### Synthetic Dataset: 
 Background, [BMP-2](https://de.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.wikipedia.org/wiki/Buk_missile_system), [Civilian Car](https://en.wikipedia.org/wiki/Car), [T-14](https://en.wikipedia.org/wiki/T-14_Armata), [T-90](https://en.wikipedia.org/wiki/T-90), [ZSU-23-4](https://en.wikipedia.org/wiki/ZSU-23-4_Shilka) for image classification:
 
-[**Download the dataset as zipfile here (781mb)**](https://drive.google.com/file/d/1r-AZeKXd_SvSXwOcQuqX_w9q0F0nT-uW/view?usp=sharing)
+[**the dataset as zipfile can be downloaded here (781mb)**](https://drive.google.com/file/d/1r-AZeKXd_SvSXwOcQuqX_w9q0F0nT-uW/view?usp=sharing)
 
 Please refer to https://github.com/UgurUysal86/MLS4MIL/tree/master/Image%20Classification and following sources when using the dataset.
 
@@ -75,6 +79,10 @@ Use this [**python code for analyzing**](code/RuTanks_analyze.py). You will need
 The Test accuracy on these 7000 Test images is 0.7185 (guessing at 7 classes would be 0.1429!)
 
 I would like to encourage you at this point to try out more test images! Have fun. 
+
+## Conclusion
+
+## Future Research
 
 ## References
 - [Chollet, F. (2018). Deep learning with Python. Section 5.3 - Using a pretrained convnet](https://www.manning.com/books/deep-learning-with-python)
