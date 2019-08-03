@@ -75,7 +75,7 @@ Use this [**python code for analyzing**](code/RuTanks_analyze.py). You will need
 ![T-90](analysis/TestImage_086_pred.png)
 ![ZSU-23](analysis/TestImage_094_pred.png)
 
-[**Class predictions for all 105 test images can be found here**](analysis)
+### [**Class predictions for all 105 test images can be found here**](analysis)
 
 ### Here is a tSNE visualization (t-Distributed Stochastic Neighbor Embedding for visualizing high-dimensional data) of the 105 test images:
 
