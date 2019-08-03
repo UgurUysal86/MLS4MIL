@@ -2,10 +2,10 @@
 
 ![poster](https://github.com/UgurUysal86/MLS4MIL/blob/master/poster_classification.png)
 
-In this repo I would like to explain how Image Classification can be used for a military application. Since, to my knowledge, no military vehicle dataset is publicly available, I created the following record using Simulation:
+In this repo I would like to explain how Image Classification can be used for a military application. Since, to my knowledge, no military vehicle dataset is publicly available, I created the following dataset by using Simulation:
 
 ### Dataset with seven classes: 
-"Background", "BMP2", "Buk-M1-2", "Civilian Car", "T14", "T90", "ZSU23" for image classification:
+Background, [BMP-2](https://de.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.wikipedia.org/wiki/Buk_missile_system), [Civilian Car](https://en.wikipedia.org/wiki/Car), [T-14](https://en.wikipedia.org/wiki/T-14_Armata), [T-90](https://en.wikipedia.org/wiki/T-90), [ZSU-23-4](https://en.wikipedia.org/wiki/ZSU-23-4_Shilka) for image classification:
 
 [**Download the dataset as zipfile here (781mb)**](https://drive.google.com/file/d/1r-AZeKXd_SvSXwOcQuqX_w9q0F0nT-uW/view?usp=sharing)
 
@@ -51,7 +51,7 @@ Use this [**python code for analyzing**](code/RuTanks_analyze.py). You will need
 
 Confusion Matrix and Classification Report:
 
-![Confusion Matrix and Classification Report](analysis/report.PNG)
+![Confusion Matrix and Classification Report](analysis/report.JPG)
 
 Here are some class predictions:
 
