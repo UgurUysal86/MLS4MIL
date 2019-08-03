@@ -25,7 +25,7 @@ Background, [BMP-2](https://de.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.
 **105 Test images (15 per class):**
 - Please check the image references section below for detailed references of the test images!
 
-### Using Keras for Transfer Learning:
+### Using Keras and Tensorflow as backend for Transfer Learning:
 Using this [**python code for training**](code/RuTanks_train.py). Please adapt the following lines:
 
 - line 34 - replace the path to the unzipped dataset: dataset_path = 'C:\\Users\\YOURNAME\\...\\RuTanks7000\\'
