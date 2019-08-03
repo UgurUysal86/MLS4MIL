@@ -2,7 +2,10 @@
 
 ![poster](https://github.com/UgurUysal86/MLS4MIL/blob/master/poster_classification.png)
 
-In this repo I would like to explain how Image Classification can be used for a military application. Since, to my knowledge, no military vehicle dataset is publicly available, I created the following dataset by using Simulation:
+**Abstract**
+Deep neural networks for image classification have already proved to be highly useful in industrial applications but require vast amounts of human-annotated images to be reliable. 
+Here the game engine [Arma3](https://arma3.com/) is used to generate photo-realistic images of various military vehicles in diverse situations. For instance, the angles and distances from which the vehicles are seen, and their locations can be varied. 
+The synthetic data is then used to train deep neural networks, and their performance is evaluated on real-world data. In this repo, I would like to present to what extent synthetic data can be used to train deep neural networks for the classification of military vehicles in images. 
 
 ### Dataset with seven classes: 
 Background, [BMP-2](https://de.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.wikipedia.org/wiki/Buk_missile_system), [Civilian Car](https://en.wikipedia.org/wiki/Car), [T-14](https://en.wikipedia.org/wiki/T-14_Armata), [T-90](https://en.wikipedia.org/wiki/T-90), [ZSU-23-4](https://en.wikipedia.org/wiki/ZSU-23-4_Shilka) for image classification:
@@ -11,7 +14,7 @@ Background, [BMP-2](https://de.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.
 
 Please refer to https://github.com/UgurUysal86/MLS4MIL/tree/master/Image%20Classification and following sources when using the dataset:
 
-**Train images:** 
+**Training images:** 
 - Training Images classes "T14", and "Background" created with [Arma3](https://arma3.com/)
 - Training Images classes "T90", "BMP2", and "ZSU-23", created with [Arma3](https://arma3.com/) and Arma3 Steam workshop content [RHSAFRF](https://steamcommunity.com/sharedfiles/filedetails/?id=843425103&searchtext=RHS)
 - Training Images class "Buk-M1-2" created  with [Arma3](https://arma3.com/) and Arma3 Steam workshop content [POOK SAM PACK](https://steamcommunity.com/sharedfiles/filedetails/?id=1154375007&searchtext=Pook+SAM)
@@ -33,7 +36,7 @@ Use this [**python code for training**](code/RuTanks_train.py). You will need to
 - **Training on CPU is not recommended, unless you have a time machine...**
 
 ### Results
-**Test accuracy: 0.9333** after 20 epochs. Training took 519 minutes on [Nvidia Geforce RTX 2060](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2060/).
+**Validation accuracy: 0.9333** after 20 epochs. Training took 519 minutes on [Nvidia Geforce RTX 2060](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2060/).
 
 Validation accuracy of Level1 (after 10 Epochs): 0.7143
 
@@ -46,6 +49,8 @@ Validation accuracy of Level2 (after additional 10 Epochs): 0.9333
 [The Tensorboard logfiles can be found here.](results/logs)
 
 ### Analyzing the trained model:
+If you want to skip the Training, you can download and use my [**RuTanks7000_v1_l2.h5 model file (442mb)**](https://drive.google.com/file/d/1ozbwzliRF6zVs7M4PXMUMctrck2FllDh/view?usp=sharing)
+
 Use this [**python code for analyzing**](code/RuTanks_analyze.py). You will need to adapt the following lines:
 
 - line 21 - replace the path to the trained model: model_path = 'Your trained model path here'
@@ -59,13 +64,17 @@ Here are some class predictions:
 
 [**Class predictions for all 105 test images can be found here**](analysis)
 
-Here is a tSNE visualization of the 105 test images:
+Here is a tSNE visualization (t-Distributed Stochastic Neighbor Embedding for visualizing high-dimensional data) of the 105 test images:
 
 ![tSNE_105](analysis/RuTanks7000_v1_tSNE_105_test.png)
 
 Here is a tSNE visualization of 7000 test images (Not included in the provided dataset):
 
 ![tSNE_7000](analysis/RuTanks7000_v1_tSNE_7000_test.png)
+
+The Test accuracy on these 7000 Test images is 0.7185 (guessing at 7 classes would be 0.1429!)
+
+I would like to encourage you at this point to try out more test images! Have fun. 
 
 ## References
 - [Chollet, F. (2018). Deep learning with Python. Section 5.3 - Using a pretrained convnet](https://www.manning.com/books/deep-learning-with-python)
@@ -75,7 +84,7 @@ Here is a tSNE visualization of 7000 test images (Not included in the provided d
 **Background Test Images:** 
 - [Test Images 1-15: Microsoft Research Cambridge Object Recognition Image Database](https://www.microsoft.com/en-us/download/details.aspx?id=52644)
 
-**BMP2 Test Images:**
+**BMP-2 Test Images:**
 - [Test Image 16](https://commons.wikimedia.org/wiki/File:BMP-2.JPG), posted by Termos, licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.en), cropped to 331x331 pixels.
 - [Test Image 17](https://de.m.wikipedia.org/wiki/Datei:BMP-2_NVA.JPG), posted by Billyhill, licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/deed.en), cropped to 331x331 pixels.
 - [Test Image 18](https://en.wikipedia.org/wiki/File:Afghan_National_Army_BMP-2.JPEG), posted by U.S. Army, licensed under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.en), cropped to 331x331 pixels.
@@ -146,7 +155,7 @@ Here is a tSNE visualization of 7000 test images (Not included in the provided d
 - [Test Image 89](https://commons.wikimedia.org/wiki/File:T-90_(2).jpg), posted by Vitaly V. Kuzmin, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), cropped to 331x331 pixels.
 - [Test Image 90](https://commons.wikimedia.org/wiki/File:2008_Moscow_May_Parade_Rehearsal_-_T-90_tanks.JPG), posted by Vovan, licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/deed.en), cropped to 331x331 pixels. 
 
-**ZSU-23 Test Images:**
+**ZSU-23-4 Test Images:**
 - [Test Image 91](https://commons.wikimedia.org/wiki/File:ZSU-23-4_Shilka_01.jpg), posted by Vitaly V. Kuzmin, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), cropped to 331x331 pixels. 
 - [Test Image 92](https://commons.wikimedia.org/wiki/File:ZSU_23-4_%22Shilka%22_mobile_anti-aircraft_vehicle_-_Museum_of_Army_Flying,_Hampshire,_England.jpg), posted by Acabashi, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), cropped to 331x331 pixels. 
 - [Test Image 93](https://commons.wikimedia.org/wiki/File:ZSU-23-4_Shilka_03.jpg), posted by Vitaly V. Kuzmin, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), cropped to 331x331 pixels. 
