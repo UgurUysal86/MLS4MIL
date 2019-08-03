@@ -53,7 +53,7 @@ Notes for the training:
 
 [**The Tensorboard logfiles can be found here**](results/logs)
 
-### Analyzing the trained model:
+## Analyzing the trained model:
 If you want to skip the Training, you can download and use my [**RuTanks7000_v1_l2.h5 model file (442mb)**](https://drive.google.com/file/d/1ozbwzliRF6zVs7M4PXMUMctrck2FllDh/view?usp=sharing)
 
 Use this [**python code for analyzing**](code/RuTanks_analyze.py). You will need to adapt the following lines:
@@ -61,11 +61,11 @@ Use this [**python code for analyzing**](code/RuTanks_analyze.py). You will need
 - line 21 - replace the path to the trained model: model_path = 'Your trained model path here'
 - line 22 - replace the path to the test folder of the dataset: 'C:/Users/YourName/.../RuTanks7000_v1/test/'
 
-#### Confusion Matrix and Classification Report:
+### Confusion Matrix and Classification Report:
 
 ![Confusion Matrix and Classification Report](analysis/report.JPG)
 
-#### Here are some class predictions:
+### Here are some class predictions:
 
 ![Class Background](analysis/TestImage_008_pred.png)
 ![BMP-2](analysis/TestImage_027_pred.png)
@@ -77,11 +77,11 @@ Use this [**python code for analyzing**](code/RuTanks_analyze.py). You will need
 
 [**Class predictions for all 105 test images can be found here**](analysis)
 
-#### Here is a tSNE visualization (t-Distributed Stochastic Neighbor Embedding for visualizing high-dimensional data) of the 105 test images:
+### Here is a tSNE visualization (t-Distributed Stochastic Neighbor Embedding for visualizing high-dimensional data) of the 105 test images:
 
 ![tSNE_105](analysis/RuTanks7000_v1_tSNE_105_test.png)
 
-#### Here is a tSNE visualization of 7000 test images (Not included in the provided dataset):
+### Here is a tSNE visualization of 7000 test images (Not included in the provided dataset):
 
 ![tSNE_7000](analysis/RuTanks7000_v1_tSNE_7000_test.png)
 
