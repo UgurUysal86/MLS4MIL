@@ -10,8 +10,8 @@ The synthetic data is then used to train deep neural networks, and their perform
 ## Purpose Statement
 The purpose of this exploratory research is to explore to what extent synthetic data can be used to train deep neural networks for the classification of military vehicles in images. 
 
-## Training Deep neural networks for the classification of military vehicles in images
-### Synthetic Dataset: 
+## Training Deep neural networks for classification of military vehicles in images with Synthetic data
+### Synthetic Dataset with 7 classes: 
 Background, [BMP-2](https://de.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.wikipedia.org/wiki/Buk_missile_system), [Civilian Car](https://en.wikipedia.org/wiki/Car), [T-14](https://en.wikipedia.org/wiki/T-14_Armata), [T-90](https://en.wikipedia.org/wiki/T-90), [ZSU-23-4](https://en.wikipedia.org/wiki/ZSU-23-4_Shilka) for image classification:
 
 [**the dataset as zipfile can be downloaded here (781mb)**](https://drive.google.com/file/d/1r-AZeKXd_SvSXwOcQuqX_w9q0F0nT-uW/view?usp=sharing)
@@ -28,7 +28,7 @@ Please refer to https://github.com/UgurUysal86/MLS4MIL/tree/master/Image%20Class
 - Please check the image references section below for detailed references of the test images!
 
 ### Using Keras for Transfer Learning:
-Use this [**python code for training**](code/RuTanks_train.py). You will need to adapt the following lines:
+Using this [**python code for training**](code/RuTanks_train.py). Please adapt the following lines:
 
 - line 34 - replace the path to the unzipped dataset: dataset_path = 'C:\\Users\\YOURNAME\\...\\RuTanks7000\\'
 - line 35 - replace the weights path: weights_path = 'C:\\Users\\YOURNAME\\weights\\weights_temp.h5'
