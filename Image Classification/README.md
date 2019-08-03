@@ -71,7 +71,7 @@ Use this [**python code for analyzing**](code/RuTanks_analyze.py). You will need
 ![BMP-2](analysis/TestImage_027_pred.png)
 ![Buk-M1-2](analysis/TestImage_034_pred.png)
 ![Civilian Car](analysis/TestImage_049_pred.png)
-![T-14](analysis/TestImage_064_pred.png)
+![T-14](analysis/TestImage_072_pred.png)
 ![T-90](analysis/TestImage_086_pred.png)
 ![ZSU-23](analysis/TestImage_094_pred.png)
 
