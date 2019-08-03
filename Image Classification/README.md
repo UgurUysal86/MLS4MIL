@@ -10,21 +10,19 @@ The synthetic data is then used to train deep neural networks, and their perform
 ## Purpose Statement
 The purpose of this exploratory research is to explore to what extent synthetic data can be used to train deep neural networks for the classification of military vehicles in images. 
 
-## Training Deep neural networks for classification of military vehicles in images with Synthetic data
+## Training Deep neural networks for classification of military vehicles in images with synthetic data
 ### Synthetic Dataset with 7 classes: 
 Background, [BMP-2](https://de.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.wikipedia.org/wiki/Buk_missile_system), [Civilian Car](https://en.wikipedia.org/wiki/Car), [T-14](https://en.wikipedia.org/wiki/T-14_Armata), [T-90](https://en.wikipedia.org/wiki/T-90), [ZSU-23-4](https://en.wikipedia.org/wiki/ZSU-23-4_Shilka) for image classification:
 
-[**the dataset as zipfile can be downloaded here (781mb)**](https://drive.google.com/file/d/1r-AZeKXd_SvSXwOcQuqX_w9q0F0nT-uW/view?usp=sharing)
+[**The dataset as zipfile can be downloaded here (781mb)**](https://drive.google.com/file/d/1r-AZeKXd_SvSXwOcQuqX_w9q0F0nT-uW/view?usp=sharing)
 
-Please refer to https://github.com/UgurUysal86/MLS4MIL/tree/master/Image%20Classification and following sources when using the dataset.
-
-**Training images:** 
+**7000 Training images (1000 per class) :** 
 - Training Images classes "T14", and "Background" created with [Arma3](https://arma3.com/)
 - Training Images classes "T90", "BMP2", and "ZSU-23", created with [Arma3](https://arma3.com/) and Arma3 Steam workshop content [RHSAFRF](https://steamcommunity.com/sharedfiles/filedetails/?id=843425103&searchtext=RHS)
 - Training Images class "Buk-M1-2" created  with [Arma3](https://arma3.com/) and Arma3 Steam workshop content [POOK SAM PACK](https://steamcommunity.com/sharedfiles/filedetails/?id=1154375007&searchtext=Pook+SAM)
 - All Images class "Civilian Car" adapted from [Cars Dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 
-**Test images:**
+**105 Test images (15 per class):**
 - Please check the image references section below for detailed references of the test images!
 
 ### Using Keras for Transfer Learning:
@@ -81,8 +79,13 @@ The Test accuracy on these 7000 Test images is 0.7185 (guessing at 7 classes wou
 I would like to encourage you at this point to try out more test images! Have fun. 
 
 ## Conclusion
+These results have shown that synthetic data can be used to train deep train neural networks in order to identify military vehicles in real-world images.
 
 ## Future Research
+- Testing on more real images
+- Using synthetic images as supplement to real images for Training. 
+- Using synthetic Heat signature images for training
+- Using synthetic sound signatures for training
 
 ## References
 - [Chollet, F. (2018). Deep learning with Python. Section 5.3 - Using a pretrained convnet](https://www.manning.com/books/deep-learning-with-python)
