@@ -2,7 +2,7 @@
 
 ![poster](https://github.com/UgurUysal86/MLS4MIL/blob/master/poster_classification.png)
 
-**Abstract**
+### Abstract
 Deep neural networks for image classification have already proved to be highly useful in industrial applications but require vast amounts of human-annotated images to be reliable. 
 Here the game engine [Arma3](https://arma3.com/) is used to generate photo-realistic images of various military vehicles in diverse situations. For instance, the angles and distances from which the vehicles are seen, and their locations can be varied. 
 The synthetic data is then used to train deep neural networks, and their performance is evaluated on real-world data. In this repo, I would like to present to what extent synthetic data can be used to train deep neural networks for the classification of military vehicles in images. 
@@ -12,7 +12,7 @@ Background, [BMP-2](https://de.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.
 
 [**Download the dataset as zipfile here (781mb)**](https://drive.google.com/file/d/1r-AZeKXd_SvSXwOcQuqX_w9q0F0nT-uW/view?usp=sharing)
 
-Please refer to https://github.com/UgurUysal86/MLS4MIL/tree/master/Image%20Classification and following sources when using the dataset:
+Please refer to https://github.com/UgurUysal86/MLS4MIL/tree/master/Image%20Classification and following sources when using the dataset.
 
 **Training images:** 
 - Training Images classes "T14", and "Background" created with [Arma3](https://arma3.com/)
@@ -38,11 +38,11 @@ Use this [**python code for training**](code/RuTanks_train.py). You will need to
 ### Results
 **Validation accuracy: 0.9333** after 20 epochs. Training took 519 minutes on [Nvidia Geforce RTX 2060](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2060/).
 
-Validation accuracy of Level1 (after 10 Epochs): 0.7143
+##### Validation accuracy of Level1 (after 10 Epochs): 0.7143
 
 ![acc_Level1](results/train_val_acc_level1.png)
 
-Validation accuracy of Level2 (after additional 10 Epochs): 0.9333
+##### Validation accuracy of Level2 (after additional 10 Epochs): 0.9333
 
 ![acc_Level2](results/train_val_acc_level2.png)
 
@@ -56,19 +56,19 @@ Use this [**python code for analyzing**](code/RuTanks_analyze.py). You will need
 - line 21 - replace the path to the trained model: model_path = 'Your trained model path here'
 - line 22 - replace the path to the test folder of the dataset: 'C:/Users/YourName/.../RuTanks7000_v1/test/'
 
-Confusion Matrix and Classification Report:
+##### Confusion Matrix and Classification Report:
 
 ![Confusion Matrix and Classification Report](analysis/report.JPG)
 
-Here are some class predictions:
+##### Here are some class predictions:
 
 [**Class predictions for all 105 test images can be found here**](analysis)
 
-Here is a tSNE visualization (t-Distributed Stochastic Neighbor Embedding for visualizing high-dimensional data) of the 105 test images:
+##### Here is a tSNE visualization (t-Distributed Stochastic Neighbor Embedding for visualizing high-dimensional data) of the 105 test images:
 
 ![tSNE_105](analysis/RuTanks7000_v1_tSNE_105_test.png)
 
-Here is a tSNE visualization of 7000 test images (Not included in the provided dataset):
+##### Here is a tSNE visualization of 7000 test images (Not included in the provided dataset):
 
 ![tSNE_7000](analysis/RuTanks7000_v1_tSNE_7000_test.png)
 
