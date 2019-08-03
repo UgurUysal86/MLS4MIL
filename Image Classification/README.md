@@ -22,6 +22,9 @@ Background, [BMP-2](https://de.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.
 - Training Images class "Buk-M1-2" created  with [Arma3](https://arma3.com/) and Arma3 Steam workshop content [POOK SAM PACK](https://steamcommunity.com/sharedfiles/filedetails/?id=1154375007&searchtext=Pook+SAM)
 - All Images class "Civilian Car" adapted from [Cars Dataset](https://ai.stanford.edu/~jkrause/cars/car_dataset.html)
 
+Training images T-14 example:
+![Training Data T-14 example](dataset/train_data_T14.JPG)
+
 **105 Test images (15 per class):**
 - Please check the image references section below for detailed references of the test images!
 
