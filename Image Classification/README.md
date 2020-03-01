@@ -37,7 +37,7 @@ Using this [**python code for training**](code/RuTanks_train.py). Please adapt t
 
 Notes for the training:
 * **Lower the batchsize if you dont have at least 6GB gpu memory!**
-* **If you dont have access to your own GPU, try** [**Google Colab**](https://colab.research.google.com/)
+* **If you dont have access to your own GPU, try** [**Google Colab**](https://colab.research.google.com/) like shown in this [**Colab Notebook**](https://github.com/UgurUysal86/MLS4MIL/blob/master/Image%20Classification/code/RuTanks7000_v2.ipynb)
 * **Training on CPU is not recommended, unless you have a time machine...**
 
 ### Results
