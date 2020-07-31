@@ -101,15 +101,15 @@ These results have shown that synthetically generated images can be used to trai
 ## Updates
 
 #### DECEMBER 21 2019: Check out my new [NOTEBOOK ON GOOGLE COLAB](https://colab.research.google.com/github/UgurUysal86/MLS4MIL/blob/master/Image%20Classification/code/RuTanks7000_v2.ipynb) including the following improvements:
-* Created the 5RuTanks_v2 dataset, a reduced dataset from the original "RuTanks7000_v1" dataset without the class "Civilian Car".
+* Created the 5RuTanks7000_v2 dataset, a reduced dataset from the original "RuTanks7000_v1" dataset without the class "Civilian Car".
 * The dataset is now read directly into Google Colab from Google Drive. 
 
 #### JULY 31 2020: Check out my new [NOTEBOOK ON GOOGLE COLAB](https://colab.research.google.com/drive/1hD4BGY_y4Ab8i4RJOUIPUMeCAU1vxoti?usp=sharing) including the following improvements:
-* Using TensorFlow 2.2.0
+* Using TensorFlow 2.2.0.
 * Implementation of the latest [**fine-tuning techniques**](https://keras.io/guides/transfer_learning/).
 * Using the TensorFlow.Keras implementation of the state-of-the-art pre-trained Neural Network [**EfficientNet**](https://arxiv.org/abs/1905.11946). 
-* The **5RuTanks7000_v1** dataset can now be downloaded as a zip file. 
-* The **5RuTanks7000_v1** dataset is now read directly into Google Colab using !wget.
+* The dataset can now be downloaded as a zip file. 
+* The dataset is now read directly into Google Colab using !wget.
 * The possibility to test individual additional images is implemented (use Chrome-Webbrowser).
 * The possibility to download the trained model after training directly from Google Colab is implemented.
 * The Test accuracy on the provided test set with 105 images improved from 91% to 93% and on additional 7000 real images (not provided) improved from 0.7185 to 0.8270 while the model size was reduced from 442mb to 70mb! 
