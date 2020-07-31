@@ -108,13 +108,13 @@ These results have shown that synthetically generated images can be used to trai
 * Using TensorFlow 2.2.0.
 * Implementation of the latest [**fine-tuning techniques**](https://keras.io/guides/transfer_learning/).
 * Using the TensorFlow.Keras implementation of the state-of-the-art pre-trained Neural Network [**EfficientNet**](https://arxiv.org/abs/1905.11946). 
+* The test accuracy on the provided test set with 105 images improved from 91% to 93% and on additional 7000 real images (not provided) improved from 0.7185 to 0.8270 while the model size was reduced from 442mb to 70mb! 
 * The dataset can now be downloaded as a zip file. 
 * The dataset is now read directly into Google Colab using !wget.
 * The possibility to test individual additional images is implemented (use Chrome-Webbrowser).
 * The possibility to download the trained model after training directly from Google Colab is implemented. 
-* The Test accuracy on the provided test set with 105 images improved from 91% to 93% and on additional 7000 real images (not provided) improved from 0.7185 to 0.8270 while the model size was reduced from 442mb to 70mb! 
-* If you want to use the model to classify images with python make sure to install and import efficientnet.tfkeras 
-* If you want to skip the training, download and use my trained model (70mb) [5RuTanks7000_v1_EfficientNetB4_public.h5](https://onedrive.live.com/download?cid=D57BE18797CC43E3&resid=D57BE18797CC43E3%21511704&authkey=APWmmFUO4_71Qqg).
+* If you want to skip training, download and use my trained model (70mb) [5RuTanks7000_v1_EfficientNetB4_public.h5](https://onedrive.live.com/download?cid=D57BE18797CC43E3&resid=D57BE18797CC43E3%21511704&authkey=APWmmFUO4_71Qqg).
+* If you want to use the model to classify images with python make sure to install and import efficientnet.tfkeras. 
 
 
 ## References
