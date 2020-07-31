@@ -4,16 +4,16 @@
 
 ## Introduction
 Deep neural networks for image classification have already proved to be highly useful in industrial applications but require vast amounts of human-annotated images to be reliable. 
-Here the game engine [Arma3](https://arma3.com/) is used to generate photo-realistic images of various military vehicles in diverse situations. For instance, the angles and distances from which the vehicles are seen, and their locations can be varied. 
-The synthetic data is then used to train deep neural networks, and their performance is evaluated on real-world data. 
+Here the game engine [Arma3](https://arma3.com/) is used to generate synthetic images of various military vehicles in diverse situations. For instance, the angles and distances from which the vehicles are seen, and their locations can be varied. 
+The synthetic images are then used to train deep neural networks, and their performance is evaluated on real-world images. 
 
 ## Purpose Statement
-The purpose of this exploratory research is to explore to what extent synthetic data can be used to train deep neural networks for the classification of military vehicles in images. 
+The purpose of this project is to explore to what extent synthetic images can be used to train deep neural networks for the classification of military vehicles in real images. 
 
-## Training deep neural networks for classification of military vehicles in images with synthetic data
-### Synthetic Dataset with 7 classes: Background, [BMP-2](https://en.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.wikipedia.org/wiki/Buk_missile_system), [Civilian Car](https://en.wikipedia.org/wiki/Car), [T-14](https://en.wikipedia.org/wiki/T-14_Armata), [T-90](https://en.wikipedia.org/wiki/T-90), [ZSU-23-4](https://en.wikipedia.org/wiki/ZSU-23-4_Shilka) for image classification:
+## Training deep neural networks for classification of military vehicles on images
+### Synthetic dataset with 7 classes: Background, [BMP-2](https://en.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.wikipedia.org/wiki/Buk_missile_system), [Civilian Car](https://en.wikipedia.org/wiki/Car), [T-14](https://en.wikipedia.org/wiki/T-14_Armata), [T-90](https://en.wikipedia.org/wiki/T-90), [ZSU-23-4](https://en.wikipedia.org/wiki/ZSU-23-4_Shilka):
 
-[**The dataset as zipfile can be downloaded here (781mb)**](https://drive.google.com/file/d/1r-AZeKXd_SvSXwOcQuqX_w9q0F0nT-uW/view?usp=sharing)
+[**The dataset as zipfile can be downloaded here (823mb)**](https://onedrive.live.com/download?cid=D57BE18797CC43E3&resid=D57BE18797CC43E3%21511654&authkey=AJq_8Esq8bsTl1o)
 
 **49000 Training images (7000 per class):** 
 - Training Images classes "T14", and "Background" created with [Arma3](https://arma3.com/)
@@ -37,17 +37,17 @@ Using this [**python code for training**](code/RuTanks_train.py). Please adapt t
 
 Notes for the training:
 * **Lower the batchsize if you dont have at least 6GB gpu memory!**
-* **If you dont have access to your own GPU, try** [**Google Colab**](https://colab.research.google.com/) like shown in this [**Colab Notebook**](https://github.com/UgurUysal86/MLS4MIL/blob/master/Image%20Classification/code/RuTanks7000_v2.ipynb)
+* **If you dont have access to your own GPU, try** [**Google Colab**](https://colab.research.google.com/)
 * **Training on CPU is not recommended, unless you have a time machine...**
 
 ### Results
-**Validation accuracy: 0.9333** after 20 epochs. Training took 519 minutes on [Nvidia Geforce RTX 2060](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2060/), (Keras 2.2.4, Tensorflow-gpu 1.14.0)
+**Validation accuracy: 0.91** after 20 epochs. Training took 519 minutes on [Nvidia Geforce RTX 2060](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2060/), (Keras 2.2.4, Tensorflow-gpu 1.14.0)
 
-#### Validation accuracy of Level1 (after 10 Epochs): 0.7143
+#### Validation accuracy of Level1 (after 10 Epochs): 0.71
 
 ![acc_Level1](results/train_val_acc_level1.png)
 
-#### Validation accuracy of Level2 (after additional 10 Epochs): 0.9333
+#### Validation accuracy of Level2 (after additional 10 Epochs): 0.91
 
 ![acc_Level2](results/train_val_acc_level2.png)
 
@@ -90,17 +90,38 @@ The Test accuracy on these 7000 Test images is 0.7185 (guessing at 7 classes wou
 I would like to encourage you at this point to try out more test images! Have fun. 
 
 ## Conclusion
-These results have shown that synthetic data can be used to train deep train neural networks in order to identify military vehicles in real-world images.
+These results have shown that synthetically generated images can be used to train deep train neural networks in order to identify military vehicles on real-world images.
 
 ## Future Research
 - Testing on more real images
-- Using synthetic images as supplement to real images for Training. 
+- Using synthetic images as supplement to real images
 - Using synthetic Heat signature images for training
-- Using synthetic sound signatures for training
+
+
+## Updates
+
+#### DECEMBER 21 2019: Check out my new [NOTEBOOK ON GOOGLE COLAB](https://colab.research.google.com/github/UgurUysal86/MLS4MIL/blob/master/Image%20Classification/code/RuTanks7000_v2.ipynb) including the following improvements:
+* Created the 5RuTanks_v2 dataset, a reduced dataset from the original "RuTanks7000_v1" dataset without the class "Civilian Car".
+* The dataset is now read directly into Google Colab from Google Drive. 
+
+#### JULY 31 2020: Check out my new [NOTEBOOK ON GOOGLE COLAB](https://colab.research.google.com/drive/1hD4BGY_y4Ab8i4RJOUIPUMeCAU1vxoti?usp=sharing) including the following improvements:
+* Using TensorFlow 2.2.0
+* Implementation of the latest [**fine-tuning techniques**](https://keras.io/guides/transfer_learning/).
+* Using the TensorFlow.Keras implementation of the state-of-the-art pre-trained Neural Network [**EfficientNet**](https://arxiv.org/abs/1905.11946). 
+* The **5RuTanks7000_v1** dataset can now be downloaded as a zip file. 
+* The **5RuTanks7000_v1** dataset is now read directly into Google Colab using !wget.
+* The possibility to test individual additional images is implemented (use Chrome-Webbrowser).
+* The possibility to download the trained model after training directly from Google Colab is implemented.
+* The Test accuracy on the provided test set with 105 images improved from 91% to 93% and on additional 7000 real images (not provided) improved from 0.7185 to 0.8270 while the model size was reduced from 442mb to 70mb! 
+
+Note: If you want to use the model to classify images with python make sure to install and import efficientnet.tfkeras 
 
 ## References
-- [Chollet, F. (2018). Deep learning with Python. Section 5.3 - Using a pretrained convnet](https://www.manning.com/books/deep-learning-with-python)
-- [Pathak, M (2018). Introduction to t-SNE.](https://www.datacamp.com/community/tutorials/introduction-t-sne)
+* [Chollet, F. (2018). Deep learning with Python. Section 5.3 - Using a pretrained convnet](https://www.manning.com/books/deep-learning-with-python)
+* [Chollet, F. (2020). Complete guide to transfer learning & fine-tuning in Keras.](https://keras.io/guides/transfer_learning/)
+* [Mingxing Tan and Quoc V. Le. EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. ICML 2019](https://arxiv.org/abs/1905.11946)
+* [Pathak, M (2018). Introduction to t-SNE.](https://www.datacamp.com/community/tutorials/introduction-t-sne)
+
 
 ## Test Image References
 **Background Test Images:** 
@@ -194,3 +215,4 @@ These results have shown that synthetic data can be used to train deep train neu
 - [Test Image 104](https://commons.wikimedia.org/wiki/File:Vietnamese_ZSU-23-4.jpg), posted by Hoangprs5, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), cropped to 331x331 pixels. 
 - [Test Image 105](https://commons.wikimedia.org/wiki/File:Shilka.jpg), posted by the Ministry of Defense of Ukraine, licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.en), cropped to 331x331 pixels. 
 
+Note: If you wish to share this dataset, please note these license conditions.
