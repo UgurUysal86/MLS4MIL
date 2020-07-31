@@ -111,10 +111,11 @@ These results have shown that synthetically generated images can be used to trai
 * The dataset can now be downloaded as a zip file. 
 * The dataset is now read directly into Google Colab using !wget.
 * The possibility to test individual additional images is implemented (use Chrome-Webbrowser).
-* The possibility to download the trained model after training directly from Google Colab is implemented.
+* The possibility to download the trained model after training directly from Google Colab is implemented. 
 * The Test accuracy on the provided test set with 105 images improved from 91% to 93% and on additional 7000 real images (not provided) improved from 0.7185 to 0.8270 while the model size was reduced from 442mb to 70mb! 
+* If you want to use the model to classify images with python make sure to install and import efficientnet.tfkeras 
+* If you want to skip the training, download and use my trained model (70mb) [5RuTanks7000_v1_EfficientNetB4_public.h5](https://onedrive.live.com/download?cid=D57BE18797CC43E3&resid=D57BE18797CC43E3%21511704&authkey=APWmmFUO4_71Qqg).
 
-Note: If you want to use the model to classify images with python make sure to install and import efficientnet.tfkeras 
 
 ## References
 * [Chollet, F. (2018). Deep learning with Python. Section 5.3 - Using a pretrained convnet](https://www.manning.com/books/deep-learning-with-python)
