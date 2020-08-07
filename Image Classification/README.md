@@ -103,6 +103,7 @@ These results have shown that synthetically generated images can be used to trai
 #### DECEMBER 21 2019: Check out my new [NOTEBOOK ON GOOGLE COLAB](https://colab.research.google.com/github/UgurUysal86/MLS4MIL/blob/master/Image%20Classification/code/RuTanks7000_v2.ipynb) including the following improvements:
 * Created the 5RuTanks7000_v2 dataset, a reduced dataset from the original "RuTanks7000_v1" dataset without the class "Civilian Car".
 * The dataset is now read directly into Google Colab from Google Drive. 
+* Alternatively, you can view the [NOTEBOOK ON GITHUB](https://github.com/UgurUysal86/MLS4MIL/blob/master/Image%20Classification/code/RuTanks7000_v2.ipynb)
 
 #### JULY 31 2020: Check out my new [NOTEBOOK ON GOOGLE COLAB](https://colab.research.google.com/drive/1hD4BGY_y4Ab8i4RJOUIPUMeCAU1vxoti?usp=sharing) including the following improvements:
 * Using TensorFlow 2.2.0.
