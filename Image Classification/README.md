@@ -14,6 +14,7 @@ The purpose of this project is to explore to what extent synthetic images can be
 ### Synthetic dataset with 7 classes: Background, [BMP-2](https://en.wikipedia.org/wiki/BMP-2), [Buk-M1-2](https://en.wikipedia.org/wiki/Buk_missile_system), [Civilian Car](https://en.wikipedia.org/wiki/Car), [T-14](https://en.wikipedia.org/wiki/T-14_Armata), [T-90](https://en.wikipedia.org/wiki/T-90), [ZSU-23-4](https://en.wikipedia.org/wiki/ZSU-23-4_Shilka):
 
 ### [The dataset as zipfile can be downloaded here (823mb)](https://onedrive.live.com/download?cid=D57BE18797CC43E3&resid=D57BE18797CC43E3%21511654&authkey=AJq_8Esq8bsTl1o)
+Note: If you wish to share this dataset, please note the license conditions listed in the image references section. The copyright remains with the original owners of the images.
 
 **49000 Training images (7000 per class):** 
 - Training Images classes "T14", and "Background" created with [Arma3](https://arma3.com/)
@@ -217,5 +218,3 @@ These results have shown that synthetically generated images can be used to trai
 - [Test Image 103](https://commons.wikimedia.org/wiki/File:ZSU-23-4M4_Shilka-M4_Armia2018.jpg), posted by Boevaya mashina, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), cropped to 331x331 pixels. 
 - [Test Image 104](https://commons.wikimedia.org/wiki/File:Vietnamese_ZSU-23-4.jpg), posted by Hoangprs5, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en), cropped to 331x331 pixels. 
 - [Test Image 105](https://commons.wikimedia.org/wiki/File:Shilka.jpg), posted by the Ministry of Defense of Ukraine, licensed under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.en), cropped to 331x331 pixels. 
-
-Note: If you wish to share this dataset, please note these license conditions.
