@@ -3,6 +3,9 @@
 ![poster](https://github.com/UgurUysal86/MLS4MIL/blob/master/poster_classification.png)
 
 ## Introduction
+
+On the future battlefield, large numbers of sensors will generate a density of information that humans cannot meaningfully capture. Therefore, sensor data must be evaluated automatically, which will support decision-making about required effects at the required speed. AI-powered data analytics will accelerate decision-making in the sensor-effector chain.
+
 Deep neural networks for image classification have already proved to be highly useful in industrial applications but require vast amounts of human-annotated images to be reliable. 
 Here the game engine [Arma3](https://arma3.com/) is used to generate synthetic images of various military vehicles in diverse situations. For instance, the angles and distances from which the vehicles are seen, and their locations can be varied. 
 The synthetic images are then used to train deep neural networks, and their performance is evaluated on real-world images. 
@@ -101,12 +104,12 @@ These results have shown that synthetically generated images can be used to trai
 
 ## Updates
 
-#### DECEMBER 21 2019: Check out my new [NOTEBOOK ON GOOGLE COLAB](https://colab.research.google.com/github/UgurUysal86/MLS4MIL/blob/master/Image%20Classification/code/RuTanks7000_v2.ipynb) including the following improvements:
+#### 21 DECEMBER 2019: Check out my new [NOTEBOOK ON GOOGLE COLAB](https://colab.research.google.com/github/UgurUysal86/MLS4MIL/blob/master/Image%20Classification/code/RuTanks7000_v2.ipynb) including the following improvements:
 * Created the 5RuTanks7000_v2 dataset, a reduced dataset from the original "RuTanks7000_v1" dataset without the class "Civilian Car".
 * The dataset is now read directly into Google Colab from Google Drive. 
 * Alternatively, you can view the [NOTEBOOK ON GITHUB](https://github.com/UgurUysal86/MLS4MIL/blob/master/Image%20Classification/code/RuTanks7000_v2.ipynb)
 
-#### JULY 31 2020: Check out my new [NOTEBOOK ON GOOGLE COLAB](https://colab.research.google.com/drive/1hD4BGY_y4Ab8i4RJOUIPUMeCAU1vxoti?usp=sharing) including the following improvements:
+#### 31 JULY 2020: Check out my new [NOTEBOOK ON GOOGLE COLAB](https://colab.research.google.com/drive/1hD4BGY_y4Ab8i4RJOUIPUMeCAU1vxoti?usp=sharing) including the following improvements:
 * Using TensorFlow 2.2.0.
 * Implementation of the latest [**fine-tuning techniques**](https://keras.io/guides/transfer_learning/).
 * Using the TensorFlow.Keras implementation of the state-of-the-art pre-trained Neural Network [**EfficientNet**](https://arxiv.org/abs/1905.11946). 
@@ -119,6 +122,7 @@ These results have shown that synthetically generated images can be used to trai
 * If you want to use the model to classify images with python make sure to install and import efficientnet.tfkeras. 
 * Alternatively, you can view the [NOTEBOOK ON GITHUB](https://github.com/UgurUysal86/MLS4MIL/blob/master/Image%20Classification/code/5RuTanks7000_v1_EfficientNetB4_public.ipynb)
 
+#### 01 MAY 2023: In the meantime, this prototypical work has been continued and professionalized. The results have been published here: [Simulation: The Great Enabler? Synthetic Data for Supercharging AI Military Systems](https://link.springer.com/chapter/10.1007/978-3-031-31268-7_19)
 
 ## References
 * [Chollet, F. (2018). Deep learning with Python. Section 5.3 - Using a pretrained convnet](https://www.manning.com/books/deep-learning-with-python)
