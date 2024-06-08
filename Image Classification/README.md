@@ -124,6 +124,12 @@ These results have shown that synthetically generated images can be used to trai
 
 #### 01 MAY 2023: In the meantime, this prototypical work has been continued and professionalized. The results have been published here: [Simulation: The Great Enabler? Synthetic Data for Supercharging AI Military Systems](https://link.springer.com/chapter/10.1007/978-3-031-31268-7_19)
 
+#### 03 JUNE 2024: Check out my new [NOTEBOOK](https://github.com/UgurUysal86/MLS4MIL/blob/master/Image%20Classification/code/Finetuning_a_pretrained_image_classification_model_with_a_syntethic_image_dataset_to_detect_different_types_of_tanks.ipynb) including the following improvements:
+* Using TensorFlow 2.15.0.
+* Using the TensorFlow.Keras implementation of the state-of-the-art pre-trained Neural Network [**EfficientNetV2**](https://keras.io/api/applications/efficientnet_v2/). 
+* The dataset is now read directly into Google Colab using !wget with an updated download link.
+* The dataset uses only synthetic images of the classes ["BMP2","Buk-M1-2","T14","T90","ZSU23"]
+
 ## References
 * [Chollet, F. (2018). Deep learning with Python. Section 5.3 - Using a pretrained convnet](https://www.manning.com/books/deep-learning-with-python)
 * [Chollet, F. (2020). Complete guide to transfer learning & fine-tuning in Keras.](https://keras.io/guides/transfer_learning/)
